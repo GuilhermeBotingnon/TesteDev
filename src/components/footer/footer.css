@@ -1,0 +1,22 @@
+.footer-container {
+  background-color: #052A26;
+}
+
+.footer-container > .content {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 1.5rem 0;
+}
+
+.footer-container > .content > .copyright {
+  text-align: right;
+  max-width: 55%;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.footer-container > .content > img {
+  max-width: 15%;
+  padding-left: 1rem;
+}

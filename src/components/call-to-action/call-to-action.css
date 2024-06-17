@@ -1,0 +1,138 @@
+:root {
+  --backdrop-width: 20%;
+}
+
+.call-to-action {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3.4rem;
+  flex-direction: column;
+}
+
+.call-to-action.-backdrop::after {
+  content: '';
+  position: absolute;
+  bottom: -3rem;
+  height: 90%;
+  width: 100vw;
+  background-color: #f6f7f6;
+  z-index: -1;
+}
+
+.call-to-action > .image {
+  max-height: 13rem;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: .5rem;
+  box-shadow: .75rem .75rem 0 .5rem #0367a5;
+  background-color: #ffffff;
+}
+
+.call-to-action > .side-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+}
+
+.call-to-action > .side-content > .heading {
+  display: grid;
+  gap: 1rem;
+}
+
+.call-to-action > .side-content > .heading > .title {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 3.75rem;
+  text-align: center;
+  color: #00273F;
+}
+
+.call-to-action > .side-content > .heading > .subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(0, 39, 63, 0.5);
+}
+
+.call-to-action > .side-content > .content {
+  display: grid;
+  row-gap: 1rem;
+  color: rgba(0, 39, 63, 0.5);
+  margin: 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.call-to-action > .side-content > .content > ul {
+  margin: 0;
+  text-align: left;
+}
+
+.call-to-action > .side-content > .content > .custom-button {
+  justify-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .call-to-action {
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .call-to-action.-backdrop {
+    margin: 4rem 0;
+  }
+
+
+  .call-to-action.-backdrop::after {
+    height: calc(100% + 8rem);
+    border-radius: 50rem;
+    left: var(--backdrop-width);
+    bottom: -4rem;
+  }
+
+  .call-to-action.-right {
+    flex-direction: row-reverse;
+  }
+
+  .call-to-action.-right.-backdrop::after {
+    right: var(--backdrop-width);
+    left: unset;
+  }
+
+  .call-to-action > .image {
+    max-height: 16rem;
+  }
+
+  .call-to-action > .side-content {
+    align-items: start;
+    row-gap: 1rem;
+  }
+
+  .call-to-action > .side-content > .heading {
+    gap: .5rem;
+  }
+
+  .call-to-action > .side-content > .heading > .title,
+  .call-to-action > .side-content > .heading > .subtitle {
+    text-align: left;
+  }
+
+  .call-to-action > .side-content > .content {
+    text-align: left;
+  }
+
+  .call-to-action > .side-content > .content > .custom-button {
+    margin-top: 2rem;
+    justify-self: start;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .call-to-action > .image {
+    max-height: 21rem;
+  }
+}

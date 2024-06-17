@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.main-head {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns:auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_container {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.button_container > .custom-button {
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  font-size: clamp(0.45rem, 0.8vw, 1.7rem);
+}
+
+
+.container > img {
+  justify-self: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.container > .main_text {
+  color: black;
+  text-align: center;
+  justify-self: center;
+  font-size: clamp(1.2rem, 3vw, 4rem);
+  max-width: 70%;
+  font-family: Righteous, arial, sans-serif;
+  font-weight: 500;
+}
+
+.container > .description_text {
+  color: #9999999a;
+  text-align: center;
+  justify-self: center;
+  padding-top: 1rem;
+  font-size: clamp(0.8rem, 1.7vw, 2rem);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .container {
+    gap: 1.5rem;
+    grid-template-columns:auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button_container {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
+  .button_container > .custom-button {
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    font-size: clamp(0.4rem, 0.8vw, 1rem);
+  }
+
+  .container > img {
+    justify-self: center;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+
+  .container > .main_text {
+    color: black;
+    text-align: center;
+    justify-self: center;
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    max-width: 60%;
+    font-family: Righteous, arial, sans-serif;
+    font-weight: 500;
+  }
+
+  .container > .description_text {
+    color: #999999;
+    text-align: center;
+    justify-self: center;
+    font-size: clamp(0.5rem, 1.4vw, 2rem);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+}
+

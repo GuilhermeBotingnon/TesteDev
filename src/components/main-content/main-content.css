@@ -1,0 +1,4 @@
+.main-content {
+  display: grid;
+  row-gap: 5rem;
+}

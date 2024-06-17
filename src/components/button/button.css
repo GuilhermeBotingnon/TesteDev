@@ -1,0 +1,28 @@
+.custom-button {
+  padding: .75rem 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  border: none;
+  font-family: "Poppins", arial, sans-serif;
+  font-size: 1rem;
+
+  background-color: #f3f4f5;
+  color: #2d4033;
+}
+
+.custom-button.-primary {
+  background-color: #e4e6c3;
+  color: #2d4033;
+}
+
+.custom-button.-secondary {
+  background-color: #8b9a7a;
+  color: #ffffff;
+}
+
+.custom-button.-info {
+  background-color: #0367a5;
+  color: #ffffff;
+}
